@@ -1,0 +1,528 @@
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+* {
+	color: inherit;
+	font-family: inherit
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding: 0;
+	margin: 0
+}
+
+body {
+	font-family: raleway, sans-serif;
+	background: #000;
+	color: #e5e5e5
+}
+
+body.lock {
+	overflow: hidden
+}
+
+a {
+	text-decoration: none;
+	color: inherit
+}
+
+ul {
+	margin: 0;
+	padding: 0
+}
+
+li {
+	list-style: none
+}
+
+input,
+button {
+	outline: none
+}
+
+button {
+	cursor: pointer;
+	border: none
+}
+
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+main {
+	background: rgb(0, 0, 0);
+	background-image: url("../../media.discordapp.net/attachments/689529536618299466/935153212019867648/301678c3cb.jpg?width=1304&amp;height=733");
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 100%
+}
+
+@font-face {
+	font-family: blender pro;
+	src: url(../fonts/blenderpro-medium.html);
+	src: local('Blender Pro Medium'), local('BlenderPro-Medium'), url(../fonts/blenderpro-mediumd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/BlenderPro-Medium.woff2) format('woff2'), url(../fonts/BlenderPro-Medium.woff) format('woff'), url(../fonts/blenderpro-medium-2.html) format('truetype');
+	font-weight: 500;
+	font-style: normal
+}
+
+@font-face {
+	font-family: blender pro;
+	src: url(../fonts/blenderpro-thinitalic.html);
+	src: local('Blender Pro Thin Italic'), local('BlenderPro-ThinItalic'), url(../fonts/blenderpro-thinitalicd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/blenderpro-thinitalic-2.html) format('woff2'), url(../fonts/blenderpro-thinitalic-3.html) format('woff'), url(../fonts/blenderpro-thinitalic-4.html) format('truetype');
+	font-weight: 100;
+	font-style: italic
+}
+
+@font-face {
+	font-family: blender pro;
+	src: url(../fonts/blenderpro-heavy.html);
+	src: local('Blender Pro Heavy'), local('BlenderPro-Heavy'), url(../fonts/blenderpro-heavyd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/BlenderPro-Heavy.woff2) format('woff2'), url(../fonts/BlenderPro-Heavy.woff) format('woff'), url(../fonts/blenderpro-heavy-2.html) format('truetype');
+	font-weight: 900;
+	font-style: normal
+}
+
+@font-face {
+	font-family: blender pro book;
+	src: url(../fonts/blenderpro-bookitalic.html);
+	src: local('Blender Pro Book Italic'), local('BlenderPro-BookItalic'), url(../fonts/blenderpro-bookitalicd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/blenderpro-bookitalic-2.html) format('woff2'), url(../fonts/blenderpro-bookitalic-3.html) format('woff'), url(../fonts/blenderpro-bookitalic-4.html) format('truetype');
+	font-weight: 400;
+	font-style: italic
+}
+
+@font-face {
+	font-family: blender pro book;
+	src: url(../fonts/blenderpro-book.html);
+	src: local('Blender Pro Book'), local('BlenderPro-Book'), url(../fonts/blenderpro-bookd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/blenderpro-book-2.html) format('woff2'), url(../fonts/blenderpro-book-3.html) format('woff'), url(../fonts/blenderpro-book-4.html) format('truetype');
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: blender pro;
+	src: url(../fonts/blenderpro-bold.html);
+	src: local('Blender Pro Bold'), local('BlenderPro-Bold'), url(../fonts/blenderpro-boldd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/BlenderPro-Bold.woff2) format('woff2'), url(../fonts/BlenderPro-Bold.woff) format('woff'), url(../fonts/blenderpro-bold-2.html) format('truetype');
+	font-weight: 700;
+	font-style: normal
+}
+
+@font-face {
+	font-family: blender pro;
+	src: url(../fonts/blenderpro-thin.html);
+	src: local('Blender Pro Thin'), local('BlenderPro-Thin'), url(../fonts/blenderpro-thind41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/blenderpro-thin-2.html) format('woff2'), url(../fonts/blenderpro-thin-3.html) format('woff'), url(../fonts/blenderpro-thin-4.html) format('truetype');
+	font-weight: 100;
+	font-style: normal
+}
+
+@font-face {
+	font-family: blender pro;
+	src: url(../fonts/blenderpro-mediumitalic.html);
+	src: local('Blender Pro Medium Italic'), local('BlenderPro-MediumItalic'), url(../fonts/blenderpro-mediumitalicd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/blenderpro-mediumitalic-2.html) format('woff2'), url(../fonts/blenderpro-mediumitalic-3.html) format('woff'), url(../fonts/blenderpro-mediumitalic-4.html) format('truetype');
+	font-weight: 500;
+	font-style: italic
+}
+
+@font-face {
+	font-family: blender pro;
+	src: url(../fonts/blenderpro-bolditalic.html);
+	src: local('Blender Pro Bold Italic'), local('BlenderPro-BoldItalic'), url(../fonts/blenderpro-bolditalicd41d%ef%b9%96.html) format('embedded-opentype'), url(../fonts/blenderpro-bolditalic-2.html) format('woff2'), url(../fonts/blenderpro-bolditalic-3.html) format('woff'), url(../fonts/blenderpro-bolditalic-4.html) format('truetype');
+	font-weight: 700;
+	font-style: italic
+}
+
+.main-flex {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 710px;
+	height: 100vh;
+	overflow: hidden;
+	position: relative
+}
+
+.slider {
+	display: flex;
+	height: 60%;
+	margin-left: -0px;
+	pointer-events: none;
+	user-select: none;
+	border: none!important
+}
+
+#num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 8px;
+}
+
+.num_c {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.dutch-detail-two-sides {
+	text-align: center;
+}
+
+.header-cont {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Blender Pro', 'Helvetica', sans-serif;
+}
+
+#claim-text-wrapper {
+	width: 524px;
+	padding: 32px;
+	background: rgb(11 11 8 / 80%);
+	border-radius: 10px;
+}
+
+.header_flex {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 30px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 524px;
+	justify-content: space-between;
+}
+
+.title-text-block {
+	background-color: rgba(11, 11, 8, 0.8);
+	border-radius: 20px;
+	padding: 5px 30px 5px 30px;
+	color: #fff;
+	font-weight: 900;
+	font-size: 23px;
+	margin-bottom: 5px;
+}
+
+.body-text-block {
+	background-color: rgba(11, 11, 8, 0.8);
+	border-radius: 20px;
+	padding: 5px 30px 5px 30px;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 400;
+}
+
+.heading {
+	opacity: 1;
+	color: rgb(252, 252, 253);
+	line-height: 51px;
+	font-style: italic;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 51px !important;
+	letter-spacing: 1px !important;
+}
+
+.clicktoconnect {
+	opacity: 1;
+	color: rgb(252, 252, 253);
+	line-height: 50px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px !important;
+	letter-spacing: 1px !important;
+}
+
+#payment-info {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 32px;
+	padding: 12px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	border-image: initial;
+	border-radius: 10px;
+}
+
+#price-img {
+	width: 82px;
+	height: 82px;
+	border-radius: 10px;
+}
+
+#payment-info-text {
+	text-align: end;
+	margin: auto 0px auto auto;
+}
+
+#payment-info-text p {
+	margin-block-start: 10px;
+	margin-block-end: 10px;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 0 !important;
+}
+
+#payment-info-text h5 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	color: rgb(241, 241, 241);
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}
+
+#ape-number {
+	display: flex;
+	box-sizing: border-box;
+	margin-bottom: 32px;
+	align-items: center;
+	padding: 12px;
+	background: rgba(123, 123, 123, 0.41);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	border-image: initial;
+	border-radius: 10px;
+}
+
+#minusbtn,
+#plusbtn {
+	position: relative;
+	color: rgb(241, 241, 241);
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#ape-total {
+	display: flex;
+	height: 61px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#ape-total h5,
+#ape-total p {
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #fff;
+	padding: 0 !important;
+	font-size: 20px;
+}
+
+#ape-total h5 {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+#pricex {
+	font-size: 22px;
+}
+
+.max-button {
+	width: 90px;
+	height: 55px;
+	border-radius: 10px;
+	background-color: #FF0008;
+	color: #fff;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-left: 15px;
+	font-weight: bold;
+	transition: .3s;
+}
+
+.max-button:hover {
+	background-color: #fff;
+	color: #FF0008;
+}
+
+#setmaxbtn {
+	text-align: end;
+	margin: auto 0 auto auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 15px;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 10px 2px #fff;
+	-moz-box-shadow: 0 0 10px 2px #fff;
+	box-shadow: 0 0 10px 2px #fff;
+	-webkit-transition: -webkit-transform 0.25s ease-in-out;
+	transition: -webkit-transform 0.25s ease-in-out;
+	-o-transition: -o-transform 0.25s ease-in-out;
+	-moz-transition: transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+	font-family: 'Blender Pro', 'Helvetica', sans-serif;
+}
+
+#total {
+	color: #d20000;
+	font-size: 24px;
+}
+
+.btn {
+	text-align: center;
+	display: block;
+	width: 150px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 15px;
+	padding-left: 6px !important;
+	color: #fff !important;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	color: #d20000 !important;
+}
+
+#connect,
+#mintbtn {
+	text-align: end;
+	font-size: 24px;
+	margin: auto 0 auto auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 10px 2px #fff;
+	-moz-box-shadow: 0 0 10px 2px #fff;
+	box-shadow: 0 0 10px 2px #fff;
+	-webkit-transition: -webkit-transform 0.25s ease-in-out;
+	transition: -webkit-transform 0.25s ease-in-out;
+	-o-transition: -o-transform 0.25s ease-in-out;
+	-moz-transition: transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+	font-family: 'Blender Pro', 'Helvetica', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.svelte-q1527 {
+	display: none;
+}
+
+.svelte-q1527:first-child {
+	display: block;
+}
+
+/* desktop
+@media(min-width:720px) {
+	#slider2 {
+		visibility: hidden;
+	}
+} */
+
+/* mobile */
+@media(max-width:720px) {
+
+	.dutch-detail-two-sides {
+		font-size: 5px;
+		text-align: center;
+	}
+
+	.header-cont {
+		/* width: 100%; */
+		font-size: 5px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#claim-text-wrapper {
+		width: 100%;
+	}
+
+	.header_flex {
+		width: 100%;
+	}
+
+	.svelte-q1527 {
+		display: block;
+	}
+
+	.main-flex {
+		flex-direction: column-reverse;
+		height: auto;
+	}
+
+	#num {
+		font-size: 20px;
+	}
+
+	.clicktoconnect {
+		font-size: 13.2px !important;
+	}
+
+	/* .slider {
+		visibility: hidden;
+		width: 0%;
+	}
+
+	#slider2 {
+		visibility: visible;
+		display: flex;
+		width: 80%;
+		margin-left: 155px
+	}
+	.body-text-block {
+		background-color: rgba(11, 11, 8, 0.8);
+		border-radius: 20px;
+		padding: 5px 30px 5px 30px;
+		color: #fff;
+		font-size: 19px;
+		font-weight: 400;
+	} */
+}
